@@ -6,7 +6,7 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 if(number > 99)
 {
-    while(number > 1000)
+    while(number > 999)
     {
         number = number / 10;
     }
