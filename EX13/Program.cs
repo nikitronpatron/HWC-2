@@ -3,15 +3,18 @@
 
 Console.WriteLine("Enter a number: ");
 int number = Convert.ToInt32(Console.ReadLine());
+int numberAbs = Convert.ToInt32(Math.Abs(number));
 
-if(number > 99)
+
+if(numberAbs > 99)
 {
-    while(number > 999)
+    while(numberAbs > 999)
     {
-        number = number / 10;
+        numberAbs = numberAbs / 10;
     }
-    int thirdNum = number % 10;
+    int thirdNum = numberAbs % 10;
     Console.WriteLine(thirdNum);
+    
 }
 else
 {
