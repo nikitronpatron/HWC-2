@@ -3,11 +3,13 @@
 
 Console.WriteLine("Enter three-digit number: ");
 int number = Convert.ToInt32(Console.ReadLine());
+int numberAbs = Convert.ToInt32(Math.Abs(number));
 
-if (number > 99 && number < 1000)
+
+if (numberAbs > 99 && numberAbs < 1000)
 {
-    int ten = number / 10;
-    int hundred = number / 100;
+    int ten = numberAbs / 10;
+    int hundred = numberAbs / 100;
     int result = ten - hundred * 10;
 
     Console.ForegroundColor = ConsoleColor.Green;
